@@ -1,0 +1,25 @@
+.container {
+  margin: 4em;
+  text-align: center;
+}
+
+.loader {
+  margin: 0 auto;
+  border: 15px solid #bdc3c7;
+  width: 120px;
+  height: 120px;
+  border-top-color: #1abc9c;
+  border-bottom-color: #3498db;
+  border-radius: 50%;
+  
+  animation: 1s cubic-bezier(0.250, 0.560, 0.860, 0.165) infinite loadingAnimation;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
